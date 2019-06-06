@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/shape_album_item_bg"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/item_id_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#979797"
+        android:layout_centerVertical="true"
+        android:padding="20dp"
+        android:text="0"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/title_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/item_id_text"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/detail_item_title"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:maxLines="2"
+            android:text="彩蛋，这是我最好的和篇文章呢"
+            android:textColor="#000"
+            android:textStyle="normal"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/detail_item_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#979797"
+                    android:drawableLeft="@mipmap/play_info_icon"
+                    android:text="245.3万"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:id="@+id/detail_item_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#979797"
+                    android:drawableLeft="@mipmap/play_info_icon"
+                    android:text="5:23"
+                    android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/detail_update_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20.0dip"
+        android:gravity="center"
+        android:text="2018-09"
+        android:textColor="#ff979797"
+        android:textSize="12sp" />
+
+</RelativeLayout>
